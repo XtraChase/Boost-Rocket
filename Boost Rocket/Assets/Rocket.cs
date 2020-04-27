@@ -28,15 +28,10 @@ public class Rocket : MonoBehaviour
         switch (collision.gameObject.tag)
         {
             case "Friendly":
-                {
-                    //do nothing
-                    break;
-                }
-            case "Obstacle":
-                {
-                    print("dead");
-                    break;
-                }
+                break;
+            default:
+                print("Dead");
+                break;
         }
     }
 
